@@ -1,0 +1,26 @@
+/* giving the blue background color to the body */
+body {
+  background-color: hsl(212, 45%, 89%);
+  font-family: sans-serif;
+}
+
+/* centering the div and giving it the white color */
+.qr-code-box {
+  width: 20%;
+  margin: 10% auto;
+  background-color: hsl(0, 0%, 100%);
+  padding: 15px;
+}
+/* resizing the image*/
+.qr-img {
+  width: 100%;
+  height: 60%;
+}
+.qr-text {
+  color: #aaa;
+}
+
+/* setting the font for the heading */
+.qr-heading {
+  color: hsl(218, 44%, 22%);
+}
