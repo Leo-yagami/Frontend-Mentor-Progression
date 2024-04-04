@@ -1,0 +1,9 @@
+//Accessibility Report
+//1)Image must have an alt attribute
+//2)Document should have one main landmark
+//3)Page should contain a level-one heading
+//4,5)All page content should be contained by landmarks
+//HTML Report
+//Your image must have an alt attribute
+
+//Since we have only 5 screenshots per month, we will come back to this after two other exercises
