@@ -1,0 +1,32 @@
+/* Note: Wanted to make the page even more responsive since two widths seemed a bit too wide in terms of range */
+
+/* *********************************** */
+/* BELOW 944px(Tablets) */
+/* *********************************** */
+
+/* 1em = 16px, 944px = 944/16 = 59em */
+@media (max-width: 59em) {
+  .qr-code-box {
+    width: 30%;
+  }
+}
+
+/* *********************************** */
+/* BELOW 704px(smaller tablets) */
+/* *********************************** */
+/* 1em = 16px, 704px = 704/16 = 44em */
+@media (max-width: 44em) {
+  .qr-code-box {
+    width: 50%;
+  }
+}
+
+/* *********************************** */
+/* BELOW 375px(mobile phones) */
+/* *********************************** */
+/* 1em = 16px, 375px = 375/16 = 23em */
+@media (max-width: 24em) {
+  .qr-code-box {
+    width: 80%;
+  }
+}
