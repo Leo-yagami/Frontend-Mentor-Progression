@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500@800&display=swap");
+
+body {
+  /* centering the div */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0;
+  padding: 0; */
+  /* making sure padding and margins are WITHING the actual heigh and not causing any excess height compared to the viewport */
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
