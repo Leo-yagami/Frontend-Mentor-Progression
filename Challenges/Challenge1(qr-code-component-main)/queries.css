@@ -7,7 +7,7 @@
 /* 1em = 16px, 944px = 944/16 = 59em */
 @media (max-width: 59em) {
   .qr-code-box {
-    width: 30%;
+    width: 35%;
   }
 }
 
