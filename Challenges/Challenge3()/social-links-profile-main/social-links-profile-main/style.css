@@ -55,18 +55,24 @@ p {
   align-items: center;
   justify-content: center;
   padding-inline-start: 0px;
-  gap: 14px;
+  gap: 12px;
 }
 
-.link_item {
-  list-style: none;
+.link {
   background-color: hsl(0, 0%, 20%);
   border-radius: 5px;
   width: 75%;
   padding: 13px 12px;
-}
-
-.link {
   font-weight: 600;
   font-size: 14px;
+  text-decoration: none;
+  color: hsla(0, 0%, 100%);
+  transition: 1000ms;
+}
+
+.link:hover,
+.link:active {
+  box-shadow: 0 0 10px rgba(197, 248, 42, 0.716);
+  background-color: hsla(75, 94%, 57%);
+  color: hsl(0, 0%, 12%);
 }

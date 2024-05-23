@@ -1,0 +1,52 @@
+@media (max-width: 65em) {
+  .profile-card {
+    width: 40%;
+  }
+}
+
+/* *********************************** */
+/* BELOW 944px(Tablets) */
+/* *********************************** */
+
+/* 1em = 16px, 944px = 944/16 = 59em */
+@media (max-width: 59em) {
+  .profile-card {
+    width: 50%;
+  }
+}
+
+/* *********************************** */
+/* BELOW 704px(smaller tablets) */
+/* *********************************** */
+/* 1em = 16px, 704px = 704/16 = 44em */
+@media (max-width: 44em) {
+  .profile-card {
+    width: 65%;
+  }
+}
+
+/* *********************************** */
+/* BELOW 425px(large mobile phones) */
+/* *********************************** */
+@media (max-width: 28em) {
+  .profile-card {
+    width: 80%;
+  }
+}
+/* *********************************** */
+/* BELOW 375px(medium mobile phones) */
+/* *********************************** */
+/* 1em = 16px, 375px = 375/16 = 23em */
+@media (max-width: 25em) {
+  .profile-card {
+    width: 85%;
+  }
+}
+/* *********************************** */
+/* BELOW 375px(Small mobile phones) */
+/* *********************************** */
+@media (max-width: 21em) {
+  .profile-card {
+    width: 90%;
+  }
+}
