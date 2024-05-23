@@ -8,6 +8,36 @@ body {
   justify-content: center;
 }
 
+.profile_pic {
+  border-radius: 100px;
+  width: 90px;
+}
+
+.profile_location {
+  color: hsl(75, 94%, 57%);
+}
+
 .profile-card {
   background-color: hsl(0, 0%, 12%);
+  width: 25%;
+  padding: 25px 0;
+  border-radius: 10px;
+}
+
+.links_list {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-inline-start: 0px;
+  gap: 10px;
+}
+
+.link_item {
+  list-style: none;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 5px;
+  width: 75%;
+  padding: 13px 10px;
 }
