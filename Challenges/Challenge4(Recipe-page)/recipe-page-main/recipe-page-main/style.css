@@ -43,6 +43,13 @@ body {
   border-radius: 14px;
 }
 
+/* Part 5/4(Section border) */
+.recipe_card section:not(:last-child) {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  margin-bottom: 3.2rem;
+  padding-bottom: 3.2rem;
+}
+
 .recipe_pic {
   width: 100%;
   border-radius: 10px;
@@ -184,5 +191,3 @@ body {
   margin-bottom: 1.2rem;
   padding-bottom: 1.2rem;
 }
-
-/* Part 5/4(Final considerations) */
