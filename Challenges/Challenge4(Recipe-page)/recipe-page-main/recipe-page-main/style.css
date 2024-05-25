@@ -89,7 +89,8 @@ body {
 
 .prep_time_list li {
   margin-left: 2.4rem;
-  text-indent: 20px;
+  /* text-indent: 20px; */
+  padding-left: 2rem;
 }
 
 .prep_time_list li:not(:last-child) {
@@ -112,7 +113,8 @@ body {
 
 .recipe_ingredients_list li {
   margin-left: 2.4rem;
-  text-indent: 12px;
+  /* text-indent: 12px; */
+  padding-left: 1.2rem;
 }
 
 .recipe_ingredients_list li:not(:last-child) {

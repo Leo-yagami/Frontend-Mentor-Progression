@@ -1,0 +1,49 @@
+@media (max-width: 71em) {
+  .recipe_card {
+    width: 60%;
+  }
+
+  .recipe_heading {
+    line-height: 4.8rem;
+  }
+}
+
+@media (max-width: 42.5em) {
+  .recipe_card {
+    width: 90%;
+  }
+
+  .recipe_heading {
+    font-size: 3.8rem;
+  }
+}
+
+@media (max-width: 26.9em) {
+  .recipe_card {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    border-radius: 0re;
+  }
+
+  /* New technique for making the image fill up the entire space of the recipe card while keep the other section's spacing */
+  .recipe_pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0rem;
+  }
+
+  .recipe_heading {
+    margin-top: 19rem;
+  }
+}
+
+@media (max-width: 23.75rem) {
+  .recipe_heading {
+    margin-top: 17rem;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+  }
+}
