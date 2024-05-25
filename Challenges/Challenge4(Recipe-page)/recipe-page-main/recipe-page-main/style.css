@@ -4,7 +4,7 @@
 
 /*
 - Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 56 / 64 / 80 / 96 / 128
 */
 
 /* - Font sizes (px)
@@ -33,15 +33,41 @@ body {
   justify-content: center;
 }
 
+.recipe_card {
+  background-color: hsl(0, 0%, 100%);
+  padding: 3.6rem 3.6rem;
+  /* height: 80%; */
+  margin: 92px 0;
+  width: 50%;
+  border-radius: 14px;
+}
+
+.recipe_pic {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 2.4rem;
+}
+
 .main_heading {
   font-family: "Young Serif", serif;
   color: hsl(24, 5%, 18%);
   font-size: 4.2rem;
   font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.recipe_des {
+  margin-bottom: 3.2rem;
+}
+
+.recipe_prep_time {
+  padding: 2.4rem 2.4rem;
+  border-radius: 8px;
 }
 
 .recipe_prep_heading {
   color: hsl(332, 51%, 32%);
+  margin-bottom: 1.2rem;
 }
 
 .recipe_prep_time {
@@ -52,6 +78,15 @@ body {
   font-weight: 700;
 }
 
+.prep_time_list li {
+  margin-left: 2.4rem;
+  text-indent: 20px;
+}
+
+.prep_time_list li:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
 .prep_time_list li::marker {
   color: hsl(332, 51%, 32%);
 }
@@ -60,22 +95,8 @@ body {
   color: hsl(14, 45%, 36%);
 }
 
-.recipe_card {
-  background-color: hsl(0, 0%, 100%);
-  padding: 3.6rem 3.6rem;
-  /* height: 80%; */
-  margin: 92px 0;
-  width: 50%;
-  border-radius: 14px;
-}
-
 .recipe_ingredients_list li::marker {
   color: hsl(14, 45%, 36%);
-}
-
-.recipe_pic {
-  width: 100%;
-  border-radius: 10px;
 }
 
 .recipe_instructions {
