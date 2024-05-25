@@ -46,4 +46,16 @@
     font-size: 3.2rem;
     line-height: 3.6rem;
   }
+
+  .recipe_card {
+    padding: 3.6rem 3.2rem;
+  }
+
+  .recipe_instructions_list {
+    padding: 0 0.2rem;
+  }
+
+  .recipe_nutrition_heading + P {
+    padding: 0 0.2rem;
+  }
 }
