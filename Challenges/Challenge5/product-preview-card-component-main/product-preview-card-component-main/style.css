@@ -110,6 +110,13 @@ body {
   background-color: hsl(159, 38%, 23%);
 }
 
+@media (max-width: 76em) {
+  .product-card {
+    width: 60vw;
+    height: 40vw;
+  }
+}
+
 @media (max-width: 24em) {
   .product-subheading {
     margin-bottom: 0.75rem;
