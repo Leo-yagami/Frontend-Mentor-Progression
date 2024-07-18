@@ -8,7 +8,7 @@
 */
 
 /* - Spacing system (px)
-  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+  2 / 4 / 8 / 12 / 16 / 20 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
 /* Redoing the styling for revision sake */
@@ -44,6 +44,56 @@ body {
   max-width: 50%;
 }
 
+.product-subheading {
+  /* IDIOT YOU CAN'T ADD MARGIN TO INLINE */
+  display: inline-block;
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.25rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 1.5rem 0 0 0;
+}
+
+.product-heading {
+  margin-top: 1rem;
+  /* 40px */
+  font-size: 2.5rem;
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+}
+
+.product-desc {
+  margin-top: 1.5rem;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding-right: 0.75rem;
+}
+
+.price {
+  /* added 20px to the spacing system */
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.product-price {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+}
+
+.product-previous-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-weight: 500;
+}
 /* 
 
 
