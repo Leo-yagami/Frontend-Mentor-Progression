@@ -29,9 +29,13 @@ body {
   height: 100vh;
 }
 
+.product-information {
+  margin: 2rem 2rem 2rem 0;
+}
+
 .product-card {
   background-color: hsl(0, 0%, 100%);
-  width: 42vw;
+  max-width: 42vw;
   display: flex;
   /* object-fit: fill; */
   /* Threshold concept: trimming image edges using border-radius of parent */
@@ -51,30 +55,31 @@ body {
   text-transform: uppercase;
   font-size: 0.75rem;
   font-weight: 500;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.5rem;
   font-family: "Montserrat", sans-serif;
-  margin: 1.5rem 0 0 0;
 }
 
 .product-heading {
   margin-top: 1rem;
   /* 40px */
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: hsl(212, 21%, 14%);
   font-family: "Fraunces", serif;
+  padding-right: 4rem;
+  line-height: 1.1;
 }
 
 .product-desc {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   color: hsl(228, 12%, 48%);
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  padding-right: 0.75rem;
+  /* padding-right: 0.75rem; */
 }
 
 .price {
   /* added 20px to the spacing system */
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -93,6 +98,26 @@ body {
   color: hsl(228, 12%, 48%);
   text-decoration: line-through;
   font-weight: 500;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  margin-bottom: 0.2rem;
+}
+
+.product-purchase-button {
+  border: none;
+  vertical-align: middle;
+  margin-top: 1.75rem;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-family: "Monstserrat", sans-serif;
+  font-weight: 700;
+  background-color: hsl(158, 36%, 37%);
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  width: 100%;
 }
 /* 
 
