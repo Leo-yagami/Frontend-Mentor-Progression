@@ -17,6 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* According to my calculations, the product-card should take 42% of the width of the viewport */
@@ -35,7 +36,8 @@ body {
 
 .product-card {
   background-color: hsl(0, 0%, 100%);
-  max-width: 42vw;
+  width: 42vw;
+  min-width: 638px;
   display: flex;
   /* object-fit: fill; */
   /* Threshold concept: trimming image edges using border-radius of parent */
@@ -48,6 +50,10 @@ body {
   max-width: 50%;
 }
 
+.product-image-small {
+  display: none;
+}
+
 .product-subheading {
   /* IDIOT YOU CAN'T ADD MARGIN TO INLINE */
   display: inline-block;
@@ -56,7 +62,6 @@ body {
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.3rem;
-  font-family: "Montserrat", sans-serif;
 }
 
 .product-heading {
@@ -72,7 +77,6 @@ body {
 .product-desc {
   margin-top: 2rem;
   color: hsl(228, 12%, 48%);
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   line-height: 1.5;
 }
@@ -93,7 +97,6 @@ body {
 }
 
 .product-previous-price {
-  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: hsl(228, 12%, 48%);
   text-decoration: line-through;
@@ -112,13 +115,128 @@ body {
   margin-top: 1.75rem;
   color: hsl(0, 0%, 100%);
   font-size: 1rem;
-  font-family: "Monstserrat", sans-serif;
   font-weight: 700;
   background-color: hsl(158, 36%, 37%);
   padding: 1rem 0;
   border-radius: 0.5rem;
   width: 100%;
 }
+
+/* Media Queries */
+/* *********************************** */
+/* BELOW 944px(Tablets) */
+/* *********************************** */
+
+/* 1em = 16px, 944px = 944/16 = 59em */
+@media (max-width: 59em) {
+  .product-card {
+    width: 70vw;
+    min-width: 600px;
+  }
+}
+
+/* *********************************** */
+/* BELOW 704px(smaller tablets) */
+/* *********************************** */
+/* 1em = 16px, 704px = 704/16 = 44em */
+@media (max-width: 44em) {
+  .product-card {
+    width: 95vw;
+    min-width: 550px;
+    gap: 1.5rem;
+  }
+
+  /* .product-information {
+    padding: 1rem 1rem 1rem 0;
+  } */
+
+  .product-heading {
+    margin-top: 0.5rem;
+  }
+  .product-desc {
+    margin-top: 1rem;
+  }
+  .price {
+    margin-top: 1rem;
+  }
+
+  .product-purchase-button {
+    margin-top: 1rem;
+  }
+}
+
+/* *********************************** */
+/* BELOW 570px(large mobile phones) */
+/* *********************************** */
+@media (max-width: 35em) {
+  .product-card {
+    width: 90vw;
+    min-width: 300px;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .product-heading {
+    padding-right: 0;
+  }
+  .product-information {
+    margin: 0;
+    padding: 0 2rem 2rem 2rem;
+  }
+
+  .product-image {
+    display: none;
+  }
+
+  .product-image-small {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+/* *********************************** */
+/* BELOW 375px(Small mobile phones) */
+/* *********************************** */
+@media (max-width: 21em) {
+  .product-card {
+    width: 90%;
+    gap: 1rem;
+  }
+
+  .product-subheading {
+    font-size: 0.7rem;
+  }
+
+  .product-heading {
+    font-size: 1.75rem;
+  }
+  .product-information {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+
+  .product-desc {
+    font-size: 0.8rem;
+    margin-top: 0.75rem;
+  }
+
+  .price {
+    margin-top: 0.75rem;
+  }
+  .product-price {
+    font-size: 1.9rem;
+  }
+
+  .product-previous-price {
+    font-size: 0.75rem;
+  }
+
+  .product-purchase-button {
+    padding: 0.8rem 0;
+    font-size: 0.75rem;
+    /* margin-top: 0.75rem; */
+  }
+}
+
 /* 
 
 
