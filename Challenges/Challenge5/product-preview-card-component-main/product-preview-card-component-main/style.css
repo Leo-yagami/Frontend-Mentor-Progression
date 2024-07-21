@@ -55,7 +55,7 @@ body {
   text-transform: uppercase;
   font-size: 0.75rem;
   font-weight: 500;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -74,12 +74,12 @@ body {
   color: hsl(228, 12%, 48%);
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  /* padding-right: 0.75rem; */
+  line-height: 1.5;
 }
 
 .price {
   /* added 20px to the spacing system */
-  margin-top: 2.5rem;
+  margin-top: 1.75rem;
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -87,7 +87,7 @@ body {
 
 .product-price {
   font-family: "Fraunces", serif;
-  font-size: 2rem;
+  font-size: 2.25rem;
   color: hsl(158, 36%, 37%);
   font-weight: 700;
 }
