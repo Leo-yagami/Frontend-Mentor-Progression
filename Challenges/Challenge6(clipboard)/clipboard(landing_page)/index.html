@@ -6,6 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Simple Tailwind Starter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="bg-white flex items-center justify-center">
+      <div class="text-center px-8 text-[18px]">
+        <div
+          class="flex justify-center bg-cover pb-16 pt-36 -mx-8"
+          style="background-image: url('./images/bg-header-mobile.png')"
+        >
+          <svg width="125" height="125" xmlns="http://www.w3.org/2000/svg">
+            <g
+              stroke="#26BBA4"
+              stroke-width="10"
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <circle cx="62.5" cy="62.5" r="57.5" />
+              <path
+                d="M85.481 85.481c-12.692 12.692-33.27 12.692-45.962 0s-12.692-33.27 0-45.962 33.27-12.692 45.962 0"
+                stroke-linecap="round"
+              />
+            </g>
+          </svg>
+        </div>
+        <h3 class="text-3xl text-darkGrayBlue">
+          A history of <br />
+          everything you copy
+        </h3>
+        <p class="text-grayBlue mt-6">
+          Clipboard allows you to track and organize everthing you copy.
+          Instantly access your clipboard on all your devices
+        </p>
+        <div class="mt-12 flex flex-col md:flex-row gap-6 md:gap-4">
+          <div class="bg-green-700 rounded-full">
+            <a
+              href="#"
+              class="inline-block text-[20px] w-full bg-strongCyan rounded-full text-white px-10 py-3 mb-[0.2rem]"
+            >
+              Download for iOS</a
+            >
+          </div>
+
+          <div class="bg-blue-700 rounded-full">
+            <a
+              href="#"
+              class="inline-block w-full bg-lightBlue rounded-full text-white px-10 py-3 mb-[0.2rem]"
+            >
+              Download for Mac</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
