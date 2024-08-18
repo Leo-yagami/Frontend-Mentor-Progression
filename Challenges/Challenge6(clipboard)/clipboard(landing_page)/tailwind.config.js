@@ -1,6 +1,9 @@
 module.exports = {
   content: ["./**/*.html"],
   theme: {
+    fontFamily: {
+      sans: ["Bai Jamjuree", "sans-serif"],
+    },
     extend: {
       colors: {
         darkGrayBlue: "hsl(210, 10%, 33%)",
