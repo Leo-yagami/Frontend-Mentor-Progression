@@ -16,10 +16,10 @@
   <body>
     <div class="bg-white mx-auto font-sans">
       <!-- hero section -->
-      <section id="hero">
+      <section>
         <!-- logo and background image wrapper -->
         <div
-          class="flex justify-center bg-cover pb-16 pt-36"
+          class="flex justify-center bg-cover pb-24 pt-36 bg-gradient-to-b from-[#ffffff00] to-white"
           style="background-image: url('/images/bg-header-desktop.png')"
         >
           <svg width="125" height="125" xmlns="http://www.w3.org/2000/svg">
@@ -38,12 +38,14 @@
           </svg>
         </div>
         <!-- title and buttons wrapper -->
-        <div class="px-6 text-[18px] flex flex-col text-center">
-          <h3 class="text-4xl text-darkGrayBlue font-[600] tracking-tighter">
+        <div class="px-6 text-[18px] flex flex-col text-center -mt-8">
+          <h1
+            class="text-4xl md:text-5xl text-darkGrayBlue font-[600] tracking-tighter"
+          >
             A history of everything you copy
-          </h3>
+          </h1>
           <p
-            class="text-grayBlue mt-6 max-w-lg mx-auto font-[400] tracking-tight"
+            class="text-grayBlue text-[18px] mt-4 max-w-2xl tracking-tight md:tracking-wider mx-auto font-[400]"
           >
             Clipboard allows you to track and organize everthing you copy.
             Instantly access your clipboard on all your devices
@@ -51,19 +53,23 @@
           <div
             class="mt-12 flex flex-col md:flex-row md:justify-center gap-6 md:gap-4 font-[600]"
           >
-            <div class="bg-green-700 rounded-full">
+            <div
+              class="bg-[#1e9583] rounded-full group hover:bg-[#22a794] duration-300"
+            >
               <a
                 href="#"
-                class="inline-block w-full bg-strongCyan rounded-full text-white px-6 py-3 mb-[0.2rem]"
+                class="inline-block w-full bg-strongCyan rounded-full text-white px-10 py-3 mb-[0.2rem] font-sans group-hover:bg-[#51c8b6] group-hover:shadow-xl group-hover:shadow-[#51c8b635] duration-300"
               >
                 Download for iOS</a
               >
             </div>
 
-            <div class="bg-blue-700 rounded-full">
+            <div
+              class="bg-[#4e5ccc] rounded-full group hover:bg-[#5768e6] duration-300"
+            >
               <a
                 href="#"
-                class="inline-block w-full bg-lightBlue rounded-full text-white px-6 py-3 mb-[0.2rem]"
+                class="inline-block w-full bg-lightBlue rounded-full text-white px-10 py-3 mb-[0.2rem] group-hover:bg-[#818fff] group-hover:shadow-xl group-hover:shadow-[#8190ff35] duration-300"
               >
                 Download for Mac</a
               >
@@ -74,11 +80,13 @@
       <!-- product description section -->
       <section class="mt-40">
         <div class="px-6 text-[18px] flex flex-col items-center">
-          <h5 class="text-darkGrayBlue text-3xl text-center font-[600]">
+          <h3
+            class="text-darkGrayBlue tracking-tight text-3xl md:text-4xl text-center font-[600]"
+          >
             Keep track of your snippets
-          </h5>
+          </h3>
           <p
-            class="max-w-lg mt-6 text-grayBlue text-center font-[400] tracking-tight"
+            class="mt-4 text-grayBlue text-center font-[400] max-w-2xl tracking-tight"
           >
             Clipboard instantly stores any item you copy in the cloud, meaning
             you can access your snippets immediately on all your devices. Our
@@ -86,22 +94,26 @@
           </p>
         </div>
         <div
-          class="flex flex-col px-6 md:flex-row mt-20 gap-16 text-center md:text-left text-grayBlue text-[18px] md:-ml-24 md:gap-24"
+          class="flex flex-col px-6 mt-20 gap-16 text-center text-grayBlue text-[18px] md:mx-8 lg:flex-row lg:mx-0 lg:text-left lg:-ml-12 lg:gap-36"
         >
-          <img src="/images/image-computer.png" />
-          <div class="space-y-12 md:max-w-sm mx-auto md:ml-0">
+          <img
+            src="/images/image-computer.png"
+            class="scale-110 px-4 md:px-0"
+            alt="macbook monitor"
+          />
+          <div class="space-y-16 mx-auto mt-16">
             <div class="space-y-2">
               <h5 class="text-darkGrayBlue text-2xl font-[600]">
                 Quick Search
               </h5>
-              <p class="font-[400]">
+              <p class="font-[400] leading-7">
                 Easily search your snippets by content category, web address,
                 application, and more.
               </p>
             </div>
             <div class="space-y-2">
               <h5 class="text-darkGrayBlue text-2xl font-[600]">iCloud Sync</h5>
-              <p class="font-[400]">
+              <p class="font-[400] leading-7">
                 Instantly saves and syncs snippets across all your devices.
               </p>
             </div>
@@ -109,7 +121,7 @@
               <h5 class="text-darkGrayBlue text-2xl font-[600]">
                 Complete History
               </h5>
-              <p class="font-[400]">
+              <p class="font-[400] leading-7">
                 Retrieve any snippets from the first moment you started using
                 the app.
               </p>
@@ -121,28 +133,34 @@
       <section
         class="mt-40 px-4 flex flex-col justify-center items-center text-center"
       >
-        <h3 class="text-3xl text-darkGrayBlue font-[600]">
+        <h3
+          class="text-3xl md:text-4xl tracking-tight text-darkGrayBlue font-[600]"
+        >
           Access Clipboard anywhere
         </h3>
-        <p
-          class="text-grayBlue text-[18px] mt-4 font-[400] max-w-2xl tracking-tight"
-        >
+        <p class="text-grayBlue text-[18px] mt-4 font-[400] max-w-2xl">
           Whether you're on the go, or at your computer, you can access all your
           Clipboard snippets in a few simple tricks
         </p>
-        <img src="/images/image-devices.png" class="mt-16" />
+        <img
+          src="/images/image-devices.png"
+          class="mt-24"
+          alt="iphone and ipad"
+        />
       </section>
-      <section class="px-6 text-center text-lg mt-28 md:px-40">
-        <h5 class="text-darkGrayBlue font-[600] text-3xl">
+      <section class="px-6 text-center text-lg mt-24 md:px-40">
+        <h5
+          class="text-darkGrayBlue font-[600] text-3xl md:text-4xl tracking-tight"
+        >
           Supercharge your workflow
         </h5>
-        <p class="font-[400] text-grayBlue mt-2">
-          We've got the tools to boost your productivity
+        <p class="font-[400] text-grayBlue mt-4">
+          We've got the tools to boost your productivity.
         </p>
         <div
-          class="flex flex-col md:flex-row gap-16 items-center justify-center md:justify-center md:items-stretch mt-20 md:gap-4"
+          class="flex flex-col md:flex-row gap-16 items-center justify-center md:justify-center md:items-stretch mt-24 md:gap-4"
         >
-          <div class="flex-1">
+          <div class="md:flex-1">
             <svg
               width="44"
               height="40"
@@ -165,13 +183,13 @@
               Create blacklists
             </p>
             <p
-              class="text-grayBlue font-[400] text-center mt-[12px] tracking-tight"
+              class="text-grayBlue font-[400] text-center mt-[12px] max-w-sm tracking-tight"
             >
               Ensure sensitive information never makes its way to your clipboard
               by excluding certain resources.
             </p>
           </div>
-          <div class="flex-1">
+          <div class="md:flex-1 md:mt-0.5">
             <svg
               width="36"
               height="32"
@@ -187,11 +205,11 @@
             <p class="text-darkGrayBlue font-[600] text-2xl mt-8">
               Plain text snippets
             </p>
-            <p class="text-grayBlue font-[400] mt-4 tracking-tight -mx-4">
+            <p class="text-grayBlue font-[400] mt-4 max-w-sm tracking-tight">
               Remove unwanted formatting from copied text for a consistent look.
             </p>
           </div>
-          <div class="flex-1">
+          <div class="md:flex-1 md:mt-0.5">
             <svg
               width="50"
               height="32"
@@ -207,7 +225,7 @@
             <p class="text-darkGrayBlue font-[600] text-2xl mt-8">
               Sneak preview
             </p>
-            <p class="text-grayBlue font-[400] mt-4 tracking-tight">
+            <p class="text-grayBlue font-[400] mt-4 max-w-2xl">
               Quick preview of all snippets on your Clipboard for easy access
             </p>
           </div>
@@ -216,40 +234,50 @@
       <!-- Logos section -->
       <section>
         <div
-          class="flex flex-col gap-16 md:flex-row items-center mt-36 px-24 md:px-40 justify-between"
+          class="flex flex-col gap-16 md:flex-row items-center mt-40 px-24 md:px-40 justify-between"
         >
-          <img src="/images/logo-google.png" alt="" class="w-46" />
-          <img src="/images/logo-ibm.png" alt="" class="w-46" />
-          <img src="/images/logo-microsoft.png" alt="" class="w-46" />
-          <img src="/images/logo-hp.png" alt="" class="w-46" />
-          <img src="/images/logo-vector-graphics.png" alt="" class="w-46" />
+          <img src="/images/logo-google.png" alt="google logo" class="" />
+          <img src="/images/logo-ibm.png" alt="ibm logo" class="" />
+          <img src="/images/logo-microsoft.png" alt="microsoft logo" class="" />
+          <img src="/images/logo-hp.png" alt="hp logo" class="" />
+          <img
+            src="/images/logo-vector-graphics.png"
+            alt="vector graphics logo"
+            class=""
+          />
         </div>
       </section>
       <!-- CTA section -->
       <section>
         <div class="px-6 text-lg text-center font-[400] mt-40">
-          <h5 class="text-darkGrayBlue font-[600] text-3xl">
+          <h5 class="text-darkGrayBlue font-[600] text-3xl md:text-4xl">
             Clipboard for iOS and Mac OS
           </h5>
-          <p class="text-grayBlue font-[400] mt-4 tracking-tight">
-            Available for free on the App Store. Download for Mac or iOS, sunc
+          <p
+            class="text-grayBlue font-[400] mt-4 max-w-2xl mx-auto tracking-tight"
+          >
+            Available for free on the App Store. Download for Mac or iOS, sync
             with iCloud and you're ready to start adding to your clipboard
           </p>
           <div
             class="mt-12 flex flex-col md:flex-row md:justify-center gap-6 md:gap-4 font-[600]"
           >
-            <div class="bg-green-700 rounded-full">
+            <div
+              class="bg-[#1e9583] rounded-full group hover:bg-[#22a794] duration-300"
+            >
               <a
                 href="#"
-                class="inline-block w-full bg-strongCyan rounded-full text-white px-6 py-3 mb-[0.2rem] font-sans"
+                class="inline-block w-full bg-strongCyan rounded-full text-white px-10 py-3 mb-[0.2rem] font-sans group-hover:bg-[#51c8b6] group-hover:shadow-xl group-hover:shadow-[#51c8b635] duration-300"
               >
                 Download for iOS</a
               >
             </div>
-            <div class="bg-blue-700 rounded-full">
+            <div
+              class="bg-[#4e5ccc] rounded-full group hover:bg-[#5768e6] duration-300"
+            >
               <a
                 href="#"
-                class="inline-block w-full bg-lightBlue rounded-full text-white px-6 py-3 mb-[0.2rem]"
+                class="inline-block w-full bg-lightBlue rounded-full text-white px-10 py-3 mb-[0.2rem] group-hover:bg-[#818fff] group-hover:shadow-xl group-hover:shadow-[#8190ff35] duration-300"
               >
                 Download for Mac</a
               >
@@ -260,7 +288,7 @@
       <!-- Footer section -->
       <footer>
         <div
-          class="flex flex-col md:flex-row items-center bg-grayBlue/15 mt-36 pt-8 md:justify-between md:px-36 text-center"
+          class="flex flex-col md:flex-row items-center bg-[#8f9aa015] mt-40 pt-4 md:justify-between md:px-32 text-center"
         >
           <svg
             width="125"
@@ -282,24 +310,36 @@
             </g>
           </svg>
           <div
-            class="grid grid-cols-1 gap-y-6 md:gap-x-8 md:gap-y-4 md:grid-cols-3 justify-items-center md:justify-items-start items-center text-lg mt-2 md:ml-24"
+            class="grid grid-cols-1 gap-y-6 md:gap-x-24 md:gap-y-4 md:grid-cols-3 justify-items-center md:justify-items-start items-center text-lg mt-2 md:ml-28"
           >
-            <a href="#" class="text-darkGrayBlue font-sans font-[400]">FAQs</a>
-            <a href="#" class="text-darkGrayBlue font-sans font-[400]"
+            <a
+              href="#"
+              class="text-darkgrayBlue font-sans font-[400] hover:text-strongCyan duration-200"
+              >FAQs</a
+            >
+            <a
+              href="#"
+              class="text-darkGrayBlue font-sans font-[400] md:order-4 hover:text-strongCyan duration-200"
               >Contact Us</a
             >
-            <a href="#" class="text-darkGrayBlue font-sans font-[400]"
-              >Privacy Policy</a
-            >
-            <a href="#" class="text-darkGrayBlue font-sans font-[400]"
+            <a
+              href="#"
+              class="text-darkGrayBlue font-sans font-[400] hover:text-strongCyan duration-200"
+              >Privacy Policy
+            </a>
+            <a
+              href="#"
+              class="text-darkGrayBlue font-sans font-[400] md:order-5 hover:text-strongCyan duration-200"
               >Press Kit</a
             >
-            <a href="#" class="text-darkGrayBlue font-sans font-[400]"
+            <a
+              href="#"
+              class="text-darkGrayBlue font-sans font-[400] hover:text-strongCyan duration-200"
               >Install Guide</a
             >
           </div>
           <div
-            class="flex flex-row gap-10 justify-center items-center mb-12 mt-12 md:gap-4 md:ml-auto"
+            class="flex flex-row gap-10 justify-center items-center mb-12 mt-12 md:gap-6 md:ml-auto"
           >
             <a href="#">
               <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
