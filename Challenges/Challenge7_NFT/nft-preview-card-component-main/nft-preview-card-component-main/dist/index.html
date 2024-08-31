@@ -34,19 +34,41 @@
   </head>
   <body>
     <!-- main wrapper(background) -->
-    <div class="bg-heavyDarkBlue h-screen flex items-center justify-center">
-      <div class="p-6 rounded-xl bg-darkBlue mx-6">
-        <img
-          src="./images/image-equilibrium.jpg"
-          alt="ntf cube"
-          class="rounded-md"
-        />
+    <div class="min-h-screen bg-heavyDarkBlue flex items-center justify-center">
+      <div class="p-6 rounded-xl bg-darkBlue m-6 md:m-0">
+        <div
+          class="group relative after:content-[' '] after:w-full after:h-full after:absolute hover:after:bg-Cyan/50 after:duration-300 after:top-0 after:left-0 after:rounded-md"
+        >
+          <svg
+            width="48"
+            height="48"
+            xmlns="http://www.w3.org/2000/svg"
+            class="opacity-0 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:duration-300 group-hover:z-50"
+          >
+            <g fill="none" fill-rule="evenodd">
+              <path d="M0 0h48v48H0z" />
+              <path
+                d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z"
+                fill="#FFF"
+                fill-rule="nonzero"
+              />
+            </g>
+          </svg>
+          <img
+            src="./images/image-equilibrium.jpg"
+            alt="ntf cube"
+            class="rounded-md md:w-72 img"
+          />
+        </div>
         <div class="mt-4 font-sans">
           <div>
-            <h1 class="text-white text-xl font-[600] tracking-wider">
+            <h1
+              class="text-white text-xl font-[600] tracking-wider hover:text-Cyan hover:cursor-pointer duration-300"
+              id="Title"
+            >
               Equilibrium #3429
             </h1>
-            <p class="text-softBlue/80 font-[300] mt-2">
+            <p class="text-softBlue/80 font-[300] mt-2 md:max-w-64">
               Our Equilibrium collection promotes balance and calm.
             </p>
             <div class="mt-2 flex items-center justify-between">
@@ -81,13 +103,39 @@
             />
             <p class="text-softBlue/80 font-[300]">
               Creation of
-              <span class="text-white font-[400]">Jules Wyvern</span>
+              <span
+                class="text-white font-[400] hover:text-Cyan hover:cursor-pointer duration-300"
+                id="CreatedBy"
+                >Jules Wyvern</span
+              >
             </p>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Trying out gsap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let imgEl = document.querySelector(".img");
+        // imgEl.classList.add("opacity-0");
+        let t1 = gsap.timeline();
+        // t1.to(imgEl, { scale: 0.7 }).to(imgEl, { scale: 1 });
+        t1.from(imgEl, {
+          opacity: 0,
+          y: -40,
+          duration: 0.5,
+        })
+          .from("#Title", {
+            text: "XXXXXXXXXXXXXXXXX",
+            duration: 2,
+            delay: 1,
+          })
+          .from("#CreatedBy", { text: "XXXXXXXXXXXX", duration: 2 });
+      });
+    </script>
     <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
